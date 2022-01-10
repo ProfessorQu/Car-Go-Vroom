@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39dc504a9bef0044a7e9a9eeb4e7758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fractured:
+  fracturedObjects:
   - {fileID: 8736040366978342814, guid: 5813f54a729c19440a6d55c9065fffb5, type: 3}
   - {fileID: 8363071387140943423, guid: a321aebc28ab9064cb90999a1202d367, type: 3}
   - {fileID: 2020741430634583148, guid: a06d7992c78c3a148b23473959ea84e4, type: 3}

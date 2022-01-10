@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FractureAble : MonoBehaviour
 {
-    public GameObject[] fractured;
+    public GameObject[] fracturedObjects;
     public float explosionForce = 10f;
 
     public void Hit(Vector3 point) {
@@ -22,7 +22,7 @@ public class FractureAble : MonoBehaviour
     }
 
     GameObject SpawnRandomFractured(Vector3 pos) {
-        int idx = Random.Range(0, fractured.Length);
-        return Instantiate(fractured[idx], pos, Quaternion.identity);
+        int idx = Random.Range(0, fracturedObjects.Length);
+        return Instantiate(fracturedObjects[idx], pos, Quaternion.identity);
     }
 }
