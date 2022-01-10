@@ -6,7 +6,6 @@ public class FractureAble : MonoBehaviour
 {
     public GameObject[] fractured;
     public float explosionForce = 10f;
-    public float explosionRadius = 10f;
 
     public void Hit(Vector3 point) {
         BoxCollider collider = GetComponent<BoxCollider>();
@@ -16,7 +15,7 @@ public class FractureAble : MonoBehaviour
         Rigidbody[] pieces = fractured.GetComponentsInChildren<Rigidbody>();
 
         foreach (var piece in pieces) {
-            piece.AddExplosionForce(explosionForce, point, explosionRadius);
+            piece.AddExplosionForce(explosionForce, point, 1000f);
         }
 
         Destroy(gameObject);

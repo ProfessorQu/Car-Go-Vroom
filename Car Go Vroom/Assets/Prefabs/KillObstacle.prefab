@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2392225803254645316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 10}
-  m_LocalScale: {x: 1, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -127,5 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fractured:
   - {fileID: 8736040366978342814, guid: 5813f54a729c19440a6d55c9065fffb5, type: 3}
-  explosionForce: 2000
-  explosionRadius: 10
+  - {fileID: 8363071387140943423, guid: a321aebc28ab9064cb90999a1202d367, type: 3}
+  - {fileID: 2020741430634583148, guid: a06d7992c78c3a148b23473959ea84e4, type: 3}
+  - {fileID: 1390045362337556087, guid: 22b82e8fae54cff4ca60c416a212915b, type: 3}
+  explosionForce: 300
