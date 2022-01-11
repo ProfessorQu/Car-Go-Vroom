@@ -5,18 +5,17 @@ using UnityEngine;
 public class FractureAble : MonoBehaviour
 {
     public GameObject[] fracturedObjects;
-    public float explosionForce = 10f;
 
-    public void Hit(Vector3 point) {
+    public void Hit(float explosionForce, Vector3 point) {
         BoxCollider collider = GetComponent<BoxCollider>();
         collider.enabled = false;
 
-        SpawnFractures(point);
+        SpawnFractures(explosionForce, point);
 
         Destroy(gameObject);
     }
 
-    void SpawnFractures(Vector3 point) {
+    void SpawnFractures(float explosionForce, Vector3 point) {
         Vector3 scale = transform.lossyScale;
         Vector3 pos = transform.position;
         int numFractures = (int)(scale.x / 0.5);

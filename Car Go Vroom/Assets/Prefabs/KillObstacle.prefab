@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1566905953507813103}
   - component: {fileID: 2392225803254645318}
   - component: {fileID: 2392225803254645319}
-  - component: {fileID: 8560858781574979116}
   m_Layer: 0
   m_Name: KillObstacle
   m_TagString: KillObstacle
@@ -112,22 +111,4 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &8560858781574979116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2392225803254645316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b39dc504a9bef0044a7e9a9eeb4e7758, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fracturedObjects:
-  - {fileID: 8736040366978342814, guid: 5813f54a729c19440a6d55c9065fffb5, type: 3}
-  - {fileID: 8363071387140943423, guid: a321aebc28ab9064cb90999a1202d367, type: 3}
-  - {fileID: 2020741430634583148, guid: a06d7992c78c3a148b23473959ea84e4, type: 3}
-  - {fileID: 1390045362337556087, guid: 22b82e8fae54cff4ca60c416a212915b, type: 3}
-  explosionForce: 300
+  m_CollisionDetection: 1

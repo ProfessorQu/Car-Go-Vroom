@@ -13,8 +13,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate() {
         float steer = Input.GetAxisRaw("Horizontal");
-        Vector3 moveVector = new Vector3(steer * steerForce, 0, driveForce);
+        rb.AddForce(0, 0, driveForce * Time.deltaTime);
 
-        rb.AddForce(moveVector * Time.deltaTime);
+        rb.AddForce(steer * steerForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+
+        if (rb.position.y < -1f) {
+            Game_Manager.instance.EndGame();
+        }
     }
 }
