@@ -18,6 +18,10 @@ public class Game_Manager : MonoBehaviour
         }
     }
 
+    public void CompleteLevel() {
+        Debug.Log("You win!");
+    }
+
     public void EndGame() {
         Debug.Log("Ending game...");
         Invoke("Restart", restartDelay);
