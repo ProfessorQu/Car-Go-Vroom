@@ -8,7 +8,12 @@ public class ScoreText : MonoBehaviour
     public Transform player;
     public TMP_Text scoreText;
 
+
     private void Update() {
         scoreText.text = (player.position.z / 10).ToString("0");
+    }
+
+    public PlayerMovement GetPlayerMovement() {
+        return player.GetComponent<PlayerMovement>();
     }
 }

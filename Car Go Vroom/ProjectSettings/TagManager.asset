@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - KillObstacle
+  - Obstacle
+  - End
   layers:
   - Default
   - TransparentFX

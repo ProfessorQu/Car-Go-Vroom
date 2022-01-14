@@ -11,10 +11,9 @@ public class PlayerCollision : MonoBehaviour
     }
 
 	private void OnCollisionEnter(Collision other) {
-        if (other.collider.CompareTag("KillObstacle"))
+        if (other.collider.CompareTag("Obstacle"))
         {
             movement.enabled = false;
-
             Game_Manager.instance.EndGame();
         }
     }
