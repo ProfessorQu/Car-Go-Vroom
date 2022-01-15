@@ -10,6 +10,7 @@ public class Game_Manager : MonoBehaviour
 
     public GameObject completeLevelUI;
     public GameObject gameOverUI;
+    public GameObject pausedUI;
 
     public float restartDelay = 1f;
     bool isRestarting = false;
@@ -23,7 +24,28 @@ public class Game_Manager : MonoBehaviour
         }
     }
 
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (!completeLevelUI.activeInHierarchy && !gameOverUI.activeInHierarchy) {
+                if (pausedUI.activeInHierarchy) {
+                    pausedUI.SetActive(false);
+                    Time.timeScale = 1f;
+                }
+                else {
+                    pausedUI.SetActive(true);
+                    Time.timeScale = 0.00001f;
+                }
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.R)) {
+            Restart();
+        }
+    }
+
     public void CompleteLevel() {
+        Time.timeScale = 1f;
+
         if (!isRestarting) {
             Debug.Log("Level Complete!");
             completeLevelUI.SetActive(true);
@@ -38,6 +60,8 @@ public class Game_Manager : MonoBehaviour
     }
 
     public void EndGame() {
+        Time.timeScale = 1f;
+
         Debug.Log("Ending game...");
         isRestarting = true;
 
@@ -48,15 +72,21 @@ public class Game_Manager : MonoBehaviour
     }
 
     public void LoadNextLevel() {
+        Time.timeScale = 1f;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void Restart() {
+        Time.timeScale = 1f;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         isRestarting = false;
     }
 
     public void Menu() {
+        Time.timeScale = 1f;
+
         SceneManager.LoadScene(0);
     }
 }

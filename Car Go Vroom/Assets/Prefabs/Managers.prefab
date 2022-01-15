@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completeLevelUI: {fileID: 0}
   gameOverUI: {fileID: 0}
+  pausedUI: {fileID: 0}
   restartDelay: 1
 --- !u!114 &6258756731374250543
 MonoBehaviour:
