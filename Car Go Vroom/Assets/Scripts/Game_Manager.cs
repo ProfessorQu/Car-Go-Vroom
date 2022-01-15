@@ -54,7 +54,6 @@ public class Game_Manager : MonoBehaviour
             PlayerMovement movement = score.GetPlayerMovement();
 
             movement.enabled = false;
-            movement.ResetVelocity();
             score.enabled = false;
         }
     }
