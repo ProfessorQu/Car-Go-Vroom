@@ -21,4 +21,8 @@ public class PlayerMovement : MonoBehaviour
             Game_Manager.instance.EndGame();
         }
     }
+
+    public void ResetVelocity() {
+        rb.velocity = new Vector3(0, 0, 0);
+    }
 }

@@ -9,6 +9,7 @@ public class Game_Manager : MonoBehaviour
     [HideInInspector] public static Game_Manager instance;
 
     public GameObject completeLevelUI;
+    public GameObject gameOverUI;
 
     public float restartDelay = 1f;
     bool isRestarting = false;
@@ -31,6 +32,7 @@ public class Game_Manager : MonoBehaviour
             PlayerMovement movement = score.GetPlayerMovement();
 
             movement.enabled = false;
+            movement.ResetVelocity();
             score.enabled = false;
         }
     }
@@ -41,15 +43,15 @@ public class Game_Manager : MonoBehaviour
 
         ScoreText score = GetComponent<ScoreText>();
         score.enabled = false;
-
-        Invoke("Restart", restartDelay);
+        
+        gameOverUI.SetActive(true);
     }
 
     public void LoadNextLevel() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    void Restart() {
+    public void Restart() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         isRestarting = false;
     }
