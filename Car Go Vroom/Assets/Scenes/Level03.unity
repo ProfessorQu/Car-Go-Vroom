@@ -19691,14 +19691,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6258756731410474949}
+    - target: {fileID: 1321620108, guid: 5715a6d0054c37a42b9eb13c3087be8b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 1967809140, guid: 5715a6d0054c37a42b9eb13c3087be8b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6258756731410474949}
+    - target: {fileID: 1967809140, guid: 5715a6d0054c37a42b9eb13c3087be8b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 4693997068062047245, guid: 5715a6d0054c37a42b9eb13c3087be8b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6258756731410474949}
+    - target: {fileID: 4693997068540120255, guid: 5715a6d0054c37a42b9eb13c3087be8b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6258756731410474949}
+    - target: {fileID: 4693997068540120255, guid: 5715a6d0054c37a42b9eb13c3087be8b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 4693997068592223154, guid: 5715a6d0054c37a42b9eb13c3087be8b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -19707,6 +19723,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6258756731410474949}
+    - target: {fileID: 4693997069032249608, guid: 5715a6d0054c37a42b9eb13c3087be8b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6258756731410474949}
+    - target: {fileID: 4693997069032249608, guid: 5715a6d0054c37a42b9eb13c3087be8b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 4693997069256663570, guid: 5715a6d0054c37a42b9eb13c3087be8b, type: 3}
       propertyPath: m_Name
       value: Canvas
